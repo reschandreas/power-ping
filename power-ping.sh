@@ -6,7 +6,7 @@ set -o nounset
 IFS='|'
 LOCK_FILE=/var/tmp/power-ping.sh
 read_env_variables () {
-    . ./.env
+    . /etc/power-ping/.env
 }
 
 scan_network () {
