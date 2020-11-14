@@ -4,7 +4,7 @@
 set -o nounset
 # set -o xtrace
 IFS='|'
-LOCK_FILE=/var/tmp/power-ping.sh
+LOCK_FILE=/var/tmp/power-ping.lock
 read_env_variables () {
     . /etc/power-ping/.env
 }
